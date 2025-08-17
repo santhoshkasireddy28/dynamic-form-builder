@@ -1,0 +1,15 @@
+<div class="flex flex-col h-screen bg-gray-100 px-4">
+  <div class="flex flex-col gap-1 items-center justify-center py-10">
+    <h1 class="text-2xl tracking-wide font-medium">Dynamic form builder</h1>
+    <p class="text-gray-600">Create different type of forms dynamically</p>
+</div>
+<div class="mb-4">
+      <button mat-flat-button (click)="navigateTo()">Saved Forms</button>
+</div>
+
+<div class="flex gap-4" cdkDropListGroup>
+    <app-form-menu class="w-64"></app-form-menu>
+    <app-main-form-editer class="flex-1"></app-main-form-editer>
+    <app-field-settings class="w-64"></app-field-settings>
+</div>
+</div>

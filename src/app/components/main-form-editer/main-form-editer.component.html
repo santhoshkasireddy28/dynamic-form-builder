@@ -1,0 +1,29 @@
+<div class="p-4 bg-white rounded-lg h-[calc(100vh-150px)] overflow-y-auto border-gray-200 shadow">
+    <div class="pb-4 border-b border-gray-200 mb-4 flex gap-2 items-center">
+        <h3 class="text-xl font-medium">Form builder</h3>
+        <mat-button-toggle-group [(value)]="activeTab">
+            <mat-button-toggle value="editor" class="!border-0 !bg-transparent hover:!bg-gray-100">
+                <mat-icon>edit</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="preview" class="!border-0 !bg-transparent hover:!bg-gray-100">
+                <mat-icon>visibility</mat-icon>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+        @if (activeTab() === 'editor') {
+            <div class="flex-1"></div>
+           <button mat-flat-button  (click)="formService.addRow()"> Add Row <mat-icon>add_circle</mat-icon></button>
+        }@else{
+            <div class="flex-1"></div>
+            <button mat-flat-button (click)="formService.saveForm()">Save Form</button>
+        }
+        
+    </div>
+  @if (activeTab() === 'editor') { 
+ <app-form-editor></app-form-editor>
+  }
+   @else{
+    <app-form-preview></app-form-preview>
+  }
+
+   
+</div>
