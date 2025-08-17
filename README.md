@@ -15,22 +15,22 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ##
 I have used Angular 19, Angular material and Tailwind css
 
-Running the Application
+## Running the Application
 
-Install dependencies:
+## Install dependencies:
 
 npm install
 
 
-Start the application:
+## Start the application:
 
 npm start
 
 
-Open the app in your browser:
+## Open the app in your browser:
 👉 http://localhost:4200/login
 
-Authorization & Roles
+## Authorization & Roles
 
 Admin Role
 
@@ -44,13 +44,11 @@ User Role
 
 View available forms
 
-Fill out and submit forms
-
 Preview saved forms
 
 Role-based authorization is implemented across all features to ensure access control.
 
-Form Builder Workflow
+## Form Builder Workflow
 
 Navigate to Form Builder.
 
@@ -70,7 +68,7 @@ Click Preview to test your form.
 
 Save the form template.
 
-Current Implementation
+## Current Implementation
 
 Implemented with three field types as proof of concept.
 
