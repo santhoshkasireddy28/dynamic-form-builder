@@ -15,23 +15,68 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ##
 I have used Angular 19, Angular material and Tailwind css
 
-## Implementation process
-How to run Application :[npm start]
-Here after running application open with `http://localhost:4200/login`
-Select as Admin or User
-If selected as Admin we can access all functionalities
-If selected ad User We can only add Saved Forms and we can see preview of it.
+Running the Application
 
-Go to Form builder 
-Drap [FORM ELEMENTS] from left to [FORM BUILDER], after drap and drop select the Filed and edit [FIELD PROPERTIES].
-Now click on [PREVIEW] Save the form.
+Install dependencies:
 
-I have implemented for three field.
-And Implemented the Authorization :
-Admin Role: Create, Edit form templates
-User Role: View and Fill out forms only
+npm install
 
-Role based Authorization also implemented
+
+Start the application:
+
+npm start
+
+
+Open the app in your browser:
+👉 http://localhost:4200/login
+
+Authorization & Roles
+
+Admin Role
+
+Create, edit, and save form templates
+
+Manage field properties
+
+Preview forms before publishing
+
+User Role
+
+View available forms
+
+Fill out and submit forms
+
+Preview saved forms
+
+Role-based authorization is implemented across all features to ensure access control.
+
+Form Builder Workflow
+
+Navigate to Form Builder.
+
+Drag form elements from the Form Elements panel (left side) to the Form Builder area.
+
+Select a field to configure its Field Properties:
+
+Label
+
+Required/Optional
+
+Help text
+
+Validation rules
+
+Click Preview to test your form.
+
+Save the form template.
+
+Current Implementation
+
+Implemented with three field types as proof of concept.
+
+Form templates are saved with editable configurations.
+
+Fully working role-based authorization between Admin and User.
 
 
 
